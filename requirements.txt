@@ -9,4 +9,3 @@ streamlit
 python-dotenv
 pydantic==2.7.1
 streamlit
-python-3.11
