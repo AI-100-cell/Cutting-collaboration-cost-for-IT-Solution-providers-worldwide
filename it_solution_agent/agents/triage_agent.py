@@ -1,12 +1,13 @@
 # agents/triage_agent.py
-
+import streamlit as st
 import os, json, sys
 sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
 from openai import OpenAI
 from dotenv import load_dotenv
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 from shared.state import SolutionTicket, ChatMessage
 from datetime import datetime
-
 
 load_dotenv()
 

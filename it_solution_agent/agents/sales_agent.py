@@ -1,12 +1,17 @@
 # agents/sales_agent.py
 # Sales Agent — receives customer request and creates a ticket.
 # Replaces: Outlook (no email license needed)
-
 import os
+import sys
 import json
 from openai import OpenAI
 from dotenv import load_dotenv
-from shared.state import SolutionTicket
+
+# Fix path so Python can find the shared folder
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+from shared.state import SolutionTicket, ChatMessage
+from datetime import datetime
 
 load_dotenv()
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
