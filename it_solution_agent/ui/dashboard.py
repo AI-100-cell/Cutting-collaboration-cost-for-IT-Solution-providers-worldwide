@@ -4,10 +4,15 @@
   # Tab 2 — Triage: see requests, assign manually with buttons
   # Tab 3 — Specialist: see assignment, click Acknowledge
   # Tab 4 — Team Lead: full activity monitor (view only)
-  
+  # Add a simple password to limit who can use it
+
 import streamlit as st
 st.title("AI Sales Dashboard")
-
+# Add a simple password to limit who can use it
+password = st.text_input("Enter demo password", type="password")
+if password != "atomcamp2026":
+    st.warning("Enter the password to use this demo.")
+    st.stop()
 st.write("System is running 🚀")
 import sys, os, json
 from datetime import datetime
