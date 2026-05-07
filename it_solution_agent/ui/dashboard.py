@@ -11,7 +11,7 @@ st.title("AI Sales Dashboard")
 # Add a simple password to limit who can use it
 password = st.text_input("Enter demo password", type="password")
 if password != "atomcamp2026":
-    st.warning("Enter the password to use this demo.")
+    st.warning("Enter the password to use this dashboard.")
     st.stop()
 st.write("System is running 🚀")
 import sys, os, json
