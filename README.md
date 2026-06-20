@@ -38,5 +38,6 @@ What I learned
 
 Designing agent-to-agent handoffs and shared state in LangGraph
 Keeping multi-agent output reliable with Pydantic schemas
-[add one real challenge you solved]
+
+https://screenrec.com/share/R7Fa1Skdej
 
